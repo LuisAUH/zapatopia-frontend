@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zapatopia</title>
+    <link rel="stylesheet" href="assets/css/style-carrito-vistarapida.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="logo.png" alt="Zapatopia Logo" class="logo">
+            </div>
+            <div class="cart-container">
+                <button id="cart-button">Carrito</button>
+                <div id="cart-dropdown" class="cart-dropdown">
+                    <div class="cart-item">
+                        <img src="product1.jpg" alt="Producto 1" class="cart-item-img">
+                        <div class="cart-item-details">
+                            <p>Marca 1</p>
+                            <p>Descripción modelo 1</p>
+                            <p>S/ 400.00 c/u</p>
+                        </div>
+                        <button class="remove-item">✖</button>
+                    </div>
+                    <div class="cart-item">
+                        <img src="product1.jpg" alt="Producto 1" class="cart-item-img">
+                        <div class="cart-item-details">
+                            <p>Marca 1</p>
+                            <p>Descripción modelo 1</p>
+                            <p>S/ 400.00 c/u</p>
+                        </div>
+                        <button class="remove-item">✖</button>
+                    </div>
+                    <!-- Repite las tarjetas de producto según sea necesario -->
+                    <div class="cart-total">
+                        <p>Total</p>
+                        <p>S/ 1600.00</p>
+                    </div>
+                    <button class="view-cart-button">Ver carrito</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <aside class="filter-container">
+            <h2>¿Qué talla estás buscando?</h2>
+            <form>
+                <label for="marca">Marca</label>
+                <select id="marca" name="marca">
+                    <option value="">--Seleccionar--</option>
+                </select>
+
+                <label for="categoria">Categoría</label>
+                <select id="categoria" name="categoria">
+                    <option value="">--Seleccionar--</option>
+                </select>
+
+                <label for="color">Color</label>
+                <input type="text" id="color" name="color">
+
+                <label for="genero">Género</label>
+                <select id="genero" name="genero">
+                    <option value="unisex">Unisex</option>
+                </select>
+
+                <label for="precio">Precio</label>
+                <div class="price-range">
+                    <input type="range" id="precio" name="precio" min="0" max="1000" step="10">
+                    <div class="price-values">
+                        <span>0</span>
+                        <span>300</span>
+                        <span>1000</span>
+                    </div>
+                </div>
+            </form>
+        </aside>
+        <section class="products-container">
+            <div class="product-card">
+                <img src="product1.jpg" alt="Producto 1">
+                <p>Marca1</p>
+                <p>Descripción modelo 1</p>
+                <p>S/ 400.00</p>
+            </div>
+            <!-- Repite las tarjetas de producto según sea necesario -->
+            <div class="product-card">
+                <img src="product2.jpg" alt="Producto 2">
+                <p>Marca1</p>
+                <p>Descripción modelo 1</p>
+                <p>S/ 400.00</p>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
